@@ -20,23 +20,13 @@ O programa em questão faz parte de um projeto final da disciplina de Vetores, G
 
 
 ## 👨🏽‍💻 Demonstração: <a id="demonstracao"></a>
-Definição do valor do modulo (m) e ordem (n)
 ![Demostração](img/1-definicao_modulo_ordem.png)
-.
-.
-Definição da matriz manualmente, onde o usuário irá definir os valores:
 ![Demostração](img/2-matriz_manualmente.png)
-Definição da matriz automaticamente, onde o programa irá gerar a matriz:
 ![Demostração](img/3-matriz_automatica.png)
-Resultado da CIFRAGEM e DECIFRAGEM:
 ![Demostração](img/4-resultado.png)
-.
-RELATORIO TÉCNICO:
 ![Demostração](img/5-relatorio_tecnico_1.png)
 ![Demostração](img/6-relatorio_2.png)
 ![Demostração](img/7-relatorio_tecnico_3.png)
-.
-FIM:
 ![Demostração](img/fim.png)
 
 Um software executado em um ambiente de terminal.
