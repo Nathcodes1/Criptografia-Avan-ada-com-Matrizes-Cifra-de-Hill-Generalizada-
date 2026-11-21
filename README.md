@@ -7,14 +7,13 @@ O programa em questão faz parte de um projeto final da disciplina de Vetores, G
 - <a href="#funcionalidades"> Funcionalidades </a>
 - <a href="#demonstracao"> Demonstração </a>
 - <a href="#tecnologias"> Tecnologias Utilizadas </a>
-- <a href="#biblioteca"> Bibliotecas Python Utilizadas </a>
 - <a href="#instalando"> Instalando as bibliotecas necessárias </a>
 - <a href="#utilidades"> Utilizades do Programa </a>
 
 
 ## 💻 Funcionalidades: <a id="funcionalidades"></a>
 - ✅ Generalização para matrizes de qualquer ordem (n x n) e módulos (26, 29 e 256);
-- ✅ Álgebra linear e aritmética modular em Python puro (sem bibliotecas externas);
+- ✅ Álgebra linear e aritmética modular em Python;
 - ✅ Validação matemática e gerador automático de chaves invertíveis;
 - ✅ Padding automático e verificação de integridade da mensagem;
 - ✅ Geração automática de relatório técnico completo em .txt.
@@ -30,30 +29,15 @@ Um software executado em um ambiente de terminal.
 ## 🛠 Tecnologias Utilizadas: <a id="tecnologias"></a>
 - [Python](https://www.python.org/) - Linguagem de programação utilizada;
 
-## 📚 Bibliotecas Python Utilizadas: <a id="biblioteca"></a>
-- 📕 Speech Recognition (biblioteca de reconhecimento de fala em Python);
-
-- 📗 PyAutoGUI (é uma ferramenta útil para automatizar tarefas repetitivas, como clicar em botões, digitar texto ou arrastar e soltar elementos).
-
-- 📘 Time (biblioteca padrão do Python que é utilizada para lidar com operações relacionadas ao tempo)
-
-## ⚙️ Instalando as bibliotecas necessárias: <a id="instalando"></a>
-```bash
-    # instalando a biblioteca de reconhecimento de fala em Python
-    pip install SpeechRecognition
-
-    # instalando a biblioteca de automatização em Python   
-    pip install pyautogui
-```
 
 ## 📌 Utilidades do Programa: <a id="utilidades"></a>
-- ✅ O programa é capaz de ouvir o que você diz e também tem a capacidade de transcrever o que foi dito;
+- ✅ O programa é capaz de cifrar e decifrar mensagens de texto com segurança usando matrizes-chave de qualquer ordem ($n \times n$) e diferentes conjuntos de caracteres (alfabeto padrão, estendido ou tabela ASCII completa);
 
-- ✅ O sistema pode ser usado como um Assistente Virtual Pessoal;
+- ✅ O sistema pode ser usado como ferramenta didática no ensino de Álgebra Linear e Criptografia, demonstrando na prática conceitos como determinantes, matriz adjunta, inverso modular e aritmética no anel $\mathbb{Z}_m$;
 
-- ✅ Pode ser integrado a jogos ou experiências de entretenimento interativo, onde os jogadores podem se comunicar com personagens ou realizar ações no jogo por meio de comandos de voz;
+- ✅ Pode ser utilizado para validar ou gerar chaves criptográficas invertíveis automaticamente, agilizando testes e simulações sem depender de bibliotecas matemáticas externas;
 
-- ✅ Integrado a aplicativos educacionais, o sistema pode fornecer suporte na aprendizagem de idiomas, pronúncia, entre outros, tornando o processo mais interativo;
+- ✅ Integrado a rotinas de estudo ou auditoria de algoritmos, o programa documenta automaticamente todo o processo matemático e o fluxo dos blocos em um relatório técnico (`.txt`), comprovando a integridade da mensagem recuperada;
 
 - ✅ O sistema apresenta automatizações de tarefas, onde o sistema por si próprio realiza a tal atividade por comando de voz.
 
