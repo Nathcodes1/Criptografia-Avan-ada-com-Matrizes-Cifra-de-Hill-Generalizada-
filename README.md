@@ -20,8 +20,14 @@ O programa em questão faz parte de um projeto final da disciplina de Vetores, G
 
 
 ## 👨🏽‍💻 Demonstração: <a id="demonstracao"></a>
-![Demostração](./assets/Codigo_Run.jpeg)
-![Demostração](./assets/Codigo_Google.jpeg)
+![Demostração](img/1-definicao_modulo_ordem.png)
+![Demostração](img/2-matriz_manualmente.png)
+![Demostração](img/3-matriz_automatica.png)
+![Demostração](img/4-resultado.png)
+![Demostração](img/5-relatorio_tecnico_1.png)
+![Demostração](img/6-relatorio_2.png)
+![Demostração](img/7-relatorio_tecnico_3.png)
+![Demostração](img/fim.png)
 
 Um software executado em um ambiente de terminal.
 
