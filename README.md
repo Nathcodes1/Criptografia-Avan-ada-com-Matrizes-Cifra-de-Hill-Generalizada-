@@ -7,7 +7,6 @@ O programa em questão faz parte de um projeto final da disciplina de Vetores, G
 - <a href="#funcionalidades"> Funcionalidades </a>
 - <a href="#demonstracao"> Demonstração </a>
 - <a href="#tecnologias"> Tecnologias Utilizadas </a>
-- <a href="#instalando"> Instalando as bibliotecas necessárias </a>
 - <a href="#utilidades"> Utilizades do Programa </a>
 
 
