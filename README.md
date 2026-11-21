@@ -23,6 +23,7 @@ O programa em questão faz parte de um projeto final da disciplina de Vetores, G
 Definição do valor do modulo (m) e ordem (n)
 ![Demostração](img/1-definicao_modulo_ordem.png)
 .
+.
 Definição da matriz manualmente, onde o usuário irá definir os valores:
 ![Demostração](img/2-matriz_manualmente.png)
 Definição da matriz automaticamente, onde o programa irá gerar a matriz:
