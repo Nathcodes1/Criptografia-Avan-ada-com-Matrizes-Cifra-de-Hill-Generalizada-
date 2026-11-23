@@ -5,6 +5,7 @@ O programa em questão faz parte de um projeto final da disciplina de Vetores, G
 
 ## 📋 Índices 
 - <a href="#funcionalidades"> Funcionalidades </a>
+- <a href="#passo-a-passo"> Passo a Passo </a>
 - <a href="#demonstracao"> Demonstração </a>
 - <a href="#tecnologias"> Tecnologias Utilizadas </a>
 - <a href="#utilidades"> Utilizades do Programa </a>
