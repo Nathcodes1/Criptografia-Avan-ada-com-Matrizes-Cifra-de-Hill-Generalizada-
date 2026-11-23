@@ -17,7 +17,33 @@ O programa em questão faz parte de um projeto final da disciplina de Vetores, G
 - ✅ Padding automático e verificação de integridade da mensagem;
 - ✅ Geração automática de relatório técnico completo em .txt.
 
+## 🚀 Passo a Passo de Uso (Interação no Terminal): <a id="passo-a-passo"></a>
 
+Ao executar o arquivo `cifra_hill.py`, o programa guia o usuário de forma interativa pelo terminal seguindo as etapas abaixo:
+
+1. **Definição do Módulo ($m$):**
+   - O usuário digita um número inteiro ($m \ge 2$) que define o conjunto de caracteres (anel $\mathbb{Z}_m$).
+   - *Exemplos:* `26` para o alfabeto padrão (`A-Z`), `29` para o alfabeto estendido (`A-Z`, espaço, `.` e `?`) ou `256` para a tabela ASCII completa.
+
+2. **Definição da Ordem da Matriz ($n$):**
+   - O usuário informa o tamanho $n$ da matriz quadrada ($n \times n$) e dos blocos de texto (limitado entre `1` e `6` para manter o desempenho do cálculo manual de determinantes).
+   - *Exemplos:* `2` para matrizes $2 \times 2$, `3` para $3 \times 3$, etc.
+
+3. **Escolha da Matriz-Chave ($K$):**
+   - O programa exibe um menu com duas opções:
+     - **`[1]` Digitar manualmente:** O usuário insere os $n$ números de cada linha separados por espaço (ex: `3 3 2` e aperta Enter). O sistema valida na hora se $\det(K) \neq 0$ e $\text{MDC}(\det(K), m) = 1$; se não for invertível, pede uma nova matriz.
+     - **`[2]` Gerar automaticamente:** O sistema sorteia matrizes aleatórias até encontrar uma que seja matematicamente invertível em $\mathbb{Z}_m$.
+
+4. **Visualização das Matrizes ($K$ e $K^{-1}$):**
+   - Com a chave aprovada, o programa exibe no terminal a Matriz-Chave original ($K$) e a sua Matriz Inversa Modular ($K^{-1}$) já calculada.
+
+5. **Inserção da Mensagem de Texto:**
+   - O usuário digita a frase ou palavra que deseja criptografar.
+   - O sistema converte os caracteres para números, aplica o *padding* automático (completando com `'X'` caso o tamanho não feche blocos exatos de tamanho $n$), cifra com $K$ e decifra com $K^{-1}$.
+
+6. **Conferência, Relatório e Reinício:**
+   - O terminal exibe a verificação de integridade (comparando o texto original com o decifrado) e o relatório técnico detalhado, além de salvar automaticamente o arquivo `relatorio_cifra_hill.txt` na mesma pasta do script.
+   - Por fim, o usuário pode digitar **`1`** para reiniciar com novos valores ou apenas pressionar **`Enter`** para encerrar o programa.
 
 ## 👨🏽‍💻 Demonstração: <a id="demonstracao"></a>
 ![Demostração](img/1-definicao_modulo_ordem.png)
