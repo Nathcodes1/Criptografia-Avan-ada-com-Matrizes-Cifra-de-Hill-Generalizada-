@@ -1,0 +1,62 @@
+======================================================================
+       RELATÓRIO TÉCNICO - CIFRA DE HILL GENERALIZADA (ANEL Z_m)      
+======================================================================
+
+1. PARÂMETROS DA CRIPTOGRAFIA
+   - Módulo do alfabeto/conjunto (m): 29 (valores de 0 a 28)
+   - Ordem da matriz / tamanho do bloco (n): 3 (matriz 3x3)
+
+   Matriz-Chave (K) escolhida:
+    [    8    7   28 ]
+    [   14    4   15 ]
+    [   20   25   26 ]
+
+----------------------------------------------------------------------
+2. CÁLCULO DA MATRIZ INVERSA MODULAR (K^-1)
+----------------------------------------------------------------------
+   Para que a cifra seja reversível em aritmética modular Z_m, aplicamos:
+   Fórmula: K^-1 = ( det(K)^-1 * adj(K) ) mod m
+
+   Passo A - Determinante da matriz K:
+             det(K) = 4944
+             Teste de coprimalidade: MDC(4944, 29) = 1 (Chave válida!)
+
+   Passo B - Inverso multiplicativo modular do determinante:
+             Buscamos um inteiro x tal que (4944 * x) mod 29 = 1.
+             Pelo Algoritmo de Euclides Estendido: det(K)^-1 = 27
+             Prova real: (4944 * 27) mod 29 = 1
+
+   Passo C - Matriz Adjunta adj(K) (Matriz dos Cofatores Transposta):
+    [ -271  518   -7 ]
+    [  -64 -352  272 ]
+    [  270  -60  -66 ]
+
+   Passo D - Multiplicação escalar por 27 e redução módulo 29:
+             Matriz Inversa Modular resultante (K^-1):
+    [   20    8   14 ]
+    [   12    8    7 ]
+    [   11    4   16 ]
+
+----------------------------------------------------------------------
+3. FLUXO DE TRANSFORMAÇÃO DOS BLOCOS DE TEXTO
+----------------------------------------------------------------------
+   - Mensagem original considerada : 'PEDRO'
+   - Padding aplicado              : 1 caractere(s) extra(s) para fechar blocos de tamanho 3
+   - Vetor numérico com padding    : [15, 4, 3, 17, 14, 23]
+
+   Cifragem (C_i = K * P_i mod m):
+     Bloco 1: P_1 = [15, 4, 3]  -->  [K * P_1 mod 29]  -->  C_1 = [0, 10, 14]
+     Bloco 2: P_2 = [17, 14, 23]  -->  [K * P_2 mod 29]  -->  C_2 = [8, 1, 12]
+     Texto Cifrado gerado: 'AKOIBM'
+
+   Decifragem (P_i = K^-1 * C_i mod m):
+     Bloco 1: C_1 = [0, 10, 14]  -->  [K^-1 * C_1 mod 29]  -->  P_1 = [15, 4, 3]
+     Bloco 2: C_2 = [8, 1, 12]  -->  [K^-1 * C_2 mod 29]  -->  P_2 = [17, 14, 23]
+
+----------------------------------------------------------------------
+4. RESULTADO DA VERIFICAÇÃO DE INTEGRIDADE
+----------------------------------------------------------------------
+   - Texto Original  : 'PEDRO'
+   - Texto Decifrado : 'PEDRO'
+   - Status Final    : APROVADA (100% idêntico)
+======================================================================
